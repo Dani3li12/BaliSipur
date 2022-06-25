@@ -7,6 +7,13 @@ export const Container = styled.View`
   margin-bottom: 10px;
   border-radius: 15px;
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex-grow: 2;
+  flex-shrink: 2;
+  justify-content: space-between;
+  // border: 1px solid blue;
+  padding: 5px;
 }
 `;
 
@@ -17,15 +24,10 @@ export const Cover = styled.View`
   background: cadetblue;
 `;
 
-export const StoryImage = styled.View`
-  width: 100px;
-  background: #3c4560;
-`;
-
 export const CardTitle = styled.Text`
-  color: black;
   font-size: 15px;
   font-weight: bold;
+  max-width: 200px;
 `;
 
 export const CardAuthor = styled.Text`
@@ -35,20 +37,21 @@ font-size: 15px;
 export const CardReadingTime = styled.Text`
 color: grey;
 font-size: 15px;
+text-align: right;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+`;
+export const CardImage = styled.Image`
+border: 1px solid black;
+  position: relative;
+  top: 50%;
 `;
 
-export const Wrapper = styled.View`
-  margin-left: 10px;
+export const CardContentWrapper = styled.View`
+  // border: 1px solid red;
+  // width: 00px;
+  right: 0px;
+  position: relative;
 `;
 
-export const Caption = styled.Text`
-  color: #3c4560;
-  font-size: 20px;
-  font-weight: 600;
-`;
-
-export const Subtitle = styled.Text`
-  color: #b8bece;
-  font-weight: 600;
-  font-size: 15px;
-`;
