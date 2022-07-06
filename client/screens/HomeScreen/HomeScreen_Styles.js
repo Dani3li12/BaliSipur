@@ -12,9 +12,8 @@ export const SearchContainer = styled.View`
   top: -25px;
 `;
 export const StoryCardsContainer = styled.View`
-  position: relative;
-  width: 90%;
-  left: 5%;
+top: -10px;
+position: relative;
 `;
 
 export const Header = styled.View`

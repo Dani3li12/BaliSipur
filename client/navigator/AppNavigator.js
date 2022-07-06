@@ -8,9 +8,6 @@ import { AntDesign, Ionicons } from '@expo/vector-icons';
 import HomeScreen from '../screens/HomeScreen/HomeScreen';
 import FavoritesScreen from '../screens/FavoritesScreen/FavoritesScreens';
 
-// import { Text, View } from 'react-native';
-import { NavigationContainer } from '@react-navigation/native';
-
 const activeColor = '#FED433';
 const inactiveColor = '#b8bece';
 

@@ -8,7 +8,8 @@ import SearchTool from '../../components/Card/SearchTool';
 export default function HomeScreen() {
   const [stories, setStories] = useState([]);
   const [fetching, setFetching] = useState(true);
-
+    
+    
  function getAllStories() {
     StoryService.getAll().then((res) => {
       setStories(res.data);
@@ -32,7 +33,6 @@ export default function HomeScreen() {
         {!fetching ?
             <View>
                 {stories.map(story =>
-                // <Text key={story}>{story.content}</Text>
                   <Card key={story.id} story={story} />
                 )}
             </View>
